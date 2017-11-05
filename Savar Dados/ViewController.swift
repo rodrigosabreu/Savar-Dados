@@ -12,7 +12,19 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        //UserDefaults.standard.set("azul", forKey: "corFundo")
+        //let texto = UserDefaults.standard.object(forKey: "corFundo")
+        //print(texto)
+        
+        //var comidas: [String] = ["Lasanha", "Pizza", "Torta"]
+        //UserDefaults.standard.set(comidas, forKey: "comidas")
+        
+        let retorno = UserDefaults.standard.object(forKey: "comidas")
+        print(retorno)
+        
+        //let retorno = UserDefaults.standard.removeObject(forKey: "comidas")
+        
     }
 
     override func didReceiveMemoryWarning() {
